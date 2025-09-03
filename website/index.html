@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home | Usman sadiq Apps</title>
+
+  <!-- Link to your main stylesheet (update later) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Minimal inline styles to ensure top bar is colored and horizontal now -->
+  <style>
+    :root { --top-bg: #0b1224; --link-color: #ffffff; --link-hover: #86efac; }
+    body{ margin:0; font-family:system-ui, Arial, sans-serif; background:#f6f7fb; color:#111; }
+    header{ background:var(--top-bg); color:var(--link-color); position:sticky; top:0; z-index:1000; }
+    .nav-wrap{ max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.6rem 1rem; }
+    .brand{ color:var(--link-color); font-weight:700; font-size:1.05rem; display:flex; align-items:center; gap:.5rem; }
+    .nav-list{ list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+    .nav-list li{ margin:0; }
+    .nav-link{ color:var(--link-color); text-decoration:none; padding:.45rem .65rem; display:inline-block; border-radius:6px; font-weight:600; }
+    .nav-link:hover, .nav-link:focus{ color:var(--top-bg); background:var(--link-hover); text-decoration:none; }
+    main{ max-width:1100px; margin:2rem auto; padding:0 1rem; }
+    footer{ background:#08101a; color:#cbd5e1; padding:1rem 0; margin-top:2rem; }
+    .footer-inner{ max-width:1200px; margin:0 auto; padding:0 1rem; display:flex; justify-content:space-between; align-items:center; font-size:.95rem; }
+    /* Mobile: simple collapse into stacked nav (no script) */
+    @media (max-width:720px){
+      .nav-list{ flex-direction:column; gap:.25rem; background:transparent; position:static; margin-top:.5rem; }
+      .nav-wrap{ flex-direction:column; align-items:flex-start; gap:.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap" role="navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span style="width:10px;height:10px;border-radius:50%;background:#22c55e;display:inline-block;"></span> Usman Sadiq Apps</a>
+
+      <ul class="nav-list" role="menubar">
+        <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+        <li><a class="nav-link" href="terms.html">Terms &amp; Uses</a></li>
+        <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- placeholder content — replace with your content later -->
+    <h1>Usman sadiq Apps</h1>
+    <p>We specialize in creating engaging iOS games across multiple genres, including simulation, casual, hypercasual, sports, action, puzzle, and role-playing. Our goal is to design experiences that are not only entertaining but also easy to play, accessible, and enjoyable for players of all ages. Each game is carefully crafted with attention to detail, smooth performance, and creative ideas to keep players coming back for more entertainment.</p>
+    
+    <p>At Usman Sadiq Apps, we believe mobile gaming should be both fun and inspiring. That’s why we focus on blending innovation with user-friendly gameplay, ensuring every title offers a fresh and memorable experience. With a passion for creativity and a commitment to quality, we continue to build games that connect with players worldwide and make every moment of play exciting.</p>
+  </main>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 MySite</div>
+      <div>Made with ♥</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us | Usman sadiq Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root { --top-bg: #0b1224; --link-color: #ffffff; --link-hover: #86efac; }
+    body { margin:0; font-family:system-ui, Arial, sans-serif; background:#f6f7fb; color:#111; }
+    header { background:var(--top-bg); color:var(--link-color); position:sticky; top:0; z-index:1000; }
+    .nav-wrap { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.6rem 1rem; }
+    .brand { color:var(--link-color); font-weight:700; font-size:1.05rem; display:flex; align-items:center; gap:.5rem; }
+    .nav-list { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+    .nav-link { color:var(--link-color); text-decoration:none; padding:.45rem .65rem; display:inline-block; border-radius:6px; font-weight:600; }
+    .nav-link:hover, .nav-link:focus { color:var(--top-bg); background:var(--link-hover); text-decoration:none; }
+    main { max-width:800px; margin:2rem auto; padding:0 1rem; text-align:center; }
+    main h1 { color:#0b1224; margin-bottom:1rem; }
+    main p { font-size:1.05rem; }
+    .email { margin-top:1rem; font-weight:600; }
+    footer { background:#08101a; color:#cbd5e1; padding:1rem 0; margin-top:2rem; }
+    .footer-inner { max-width:1200px; margin:0 auto; padding:0 1rem; display:flex; justify-content:space-between; align-items:center; font-size:.95rem; }
+    @media (max-width:720px){ .nav-list{ flex-direction:column; } .nav-wrap{ flex-direction:column; align-items:flex-start; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap" role="navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span style="width:10px;height:10px;border-radius:50%;background:#22c55e;display:inline-block;"></span> Usman Sadiq Apps</a>
+      <ul class="nav-list" role="menubar">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+        <li><a class="nav-link" href="terms.html">Terms &amp; Uses</a></li>
+        <li><a class="nav-link" href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Contact Us</h1>
+    <p>If you have questions about this Privacy Policy, contact us at:</p>
+    <p class="email">📧 Email: <a href="mailto:frsstudio786@gmail.com">frsstudio786@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 MySite</div>
+      <div>Privacy first</div>
+    </div>
+  </footer>
+</body>
+</html>
